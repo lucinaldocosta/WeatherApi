@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    color: #fff;
+}
+body{
+    background-image: url(https://vinsweb.org/wp-content/uploads/2020/04/AtHome-NightSky-1080x810-1.jpg);
+    background-size: 100vw 100vh;
+}
+/* ------------------------HEADER----------------------------------------- */
+header{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    margin-top: 30px;
+}
+/* ----------------------------FIRST PAGE------------------------------------- */
+.firstPage{
+    position: absolute;
+    background-color: rgba(12, 0, 80, 0.5);
+    border-radius: 30px;
+    left: 10vw;
+    z-index: 100;
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchInput{
+    width: 60vw;
+    height: 10vw;
+    border-radius: 20px;
+    color: #000;
+    padding-left: 10px;
+    border: 2px solid #48e;
+    font-size: 30px;
+}
+.searchInput::placeholder{
+    font-weight: bold;
+    padding-left: 10px;
+}
+.searchInput:focus{
+    outline: none;
+    padding-left: 10px;
+}
+.searchBtn{
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 80px;
+}
+.search_icon_btn{
+    width: 20px;
+    height: 20px;
+}
+.searchBtn:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* -----------------------------MAIN SECTION------------------------------------ */
+.main_section{
+    height: 50vh;
+    width: 45vw;
+    display: none;
+    flex-direction: row;
+    align-items: end;
+    position: relative;
+    left: 10vw;
+    background-color: rgba(37, 131, 238, 0.5);
+    border-radius: 30px 0 0 30px;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px; 
+}
+.city{
+    overflow: hidden;
+    font-size: 3vw;
+    position: absolute;
+    bottom: 6vw;
+    left: 23vw;
+}
+.country{
+    font-size: 2.5vw;
+    overflow: hidden;
+    position: absolute;
+    bottom: 6vw;
+    left: 40vw;
+}
+.temperature{
+    overflow: hidden;
+    font-size: 7vw;
+    position: absolute;
+    bottom: 5vw;
+    left: 13vw;
+}
+.icons{
+    position: absolute;
+    bottom: 6vw;
+    margin-left: 1vw;
+}
+.icons img{
+    width: 15vw;
+    z-index: 10;
+}
+/* --------------------------------ASIDE--------------------------------- */
+.aside{
+    position: absolute;
+    right: 10vw;
+    top: 25vh;
+    height: 50vh;
+    width: 35vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(12, 0, 80, 0.5);
+    overflow: hidden;
+    border-radius: 0 30px 30px 0;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 27vw;
+    height: 8vh;
+    margin: 20px 20px 0 20px;
+}
+.search_input{
+    background-color: rgba(12, 0, 80, 0);
+    border: none;
+    width: 25vw;
+    border-bottom: 2px solid #fff;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+.search_input::placeholder{
+    font-weight: bold;
+    padding-left: 5px;
+}
+.search_input:focus{
+    outline: none;
+    padding-left: 5px;
+}
+.search_btn{
+    overflow: hidden;
+    width: 36px;
+    height: 31px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border: none;
+    margin-top: 15px;
+    border-radius: 50px;
+}
+.search_icon{
+    padding-top: 2px;
+    width: 20px;
+    height: 20px;
+}
+.search_btn:hover{
+    background-color: rgba(255, 255, 255, 0.548);
+}
+.others{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddd;
+    text-align: justify;
+    margin: 20px 10px 0 4vw;
+}
+.others_values{
+    margin-left: 17vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddd;
+    text-align: center;
+    position: relative;
+    bottom: 27px;
+}
+/* --------------------------------FOOTER--------------------------------- */
+footer{
+    height: 9vh;
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    width: 100vw;
+}
+.copyright{
+    text-align: center;
+    color: #eee;
+    font-weight: bold;
+    padding-top: 1.9vh;
+}

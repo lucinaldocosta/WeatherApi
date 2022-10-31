@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather Api</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+</head>
+<body>
+<!-- ----------------------------HEADER----------------------------------------------- -->
+    <header>
+        <h1 class="title">Weather Api</h1>
+    </header>
+<!-- ---------------------------FIRST PAGE------------------------------------------------ -->
+    <section class="firstPage">
+        <article>
+            <input class="searchInput" type="text" placeholder="Search" autocomplete="none">
+            <button class="searchBtn"><img class="search_icon_btn" src="./IMG/search.png"></button>
+        </article>
+    </section>
+<!-- -----------------------------MAIN SECTION---------------------------------------------- -->
+    <section class="main_section">
+        <article class="main">
+            <h3 class="temperature"></h3>
+        </article>
+        <article class="location">
+            <h2 class="city"></h2>
+            <h2 class="country"></h2>
+        </article>
+        <article class="icons">
+            <img class="icons_time" src="">
+        </article>
+    </section>
+<!-- --------------------------------ASIDE------------------------------------------- -->
+    <aside class="aside">
+        <article class="search">
+            <input class="search_input" type="text" placeholder="Search" autocomplete="none">
+            <button class="search_btn"><img class="search_icon" src="./IMG/search.png"></button>
+        </article>
+        <article class="others">
+            <p class="feels_like">Feels Like:</p><p class="others_values feels_like_value"></p>
+            <p class="humidity">Humidity:</p><p class="others_values humidity_value"></p>
+            <p class="pressure">Pressure:</p><p class="others_values pressure_value"></p>
+            <p class="wind_speed">Wind Speed:</p><p class="others_values wind_speed_value"></p>
+        </article>
+    </aside>
+<!-- ---------------------------------FOOTER------------------------------------------ -->
+    <footer>
+        <p class="copyright">2022 - LC Codes</p>
+    </footer>
+    <script src='weather.js'></script>
+</body>
+</html>
