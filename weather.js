@@ -21,7 +21,7 @@ const windSpeed = document.querySelector(".wind_speed_value");
 let peticion;
 
 const weather = {
-    apiKey : "b6f2fd9fd9f03aa5cf1969dbb8ec9196",
+    apiKey : "You need your apiKey in openweathermap",
     lang: "pt",
     units: "metric",
 }
